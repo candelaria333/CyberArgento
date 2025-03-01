@@ -390,25 +390,6 @@ h2 {
     background-color: #128C7E; /* Efecto hover */
 }
 
-/* Ajustes Responsivos */
-@media (max-width: 768px) {
-    .modal-content {
-        width: 90%;
-        padding: 20px;
-    }
-
-    .modal-title {
-        font-size: 22px;
-    }
-
-    .modal-description {
-        font-size: 16px;
-    }
-}
-
-
-
-
 
 /* Testimonios */
 /* Sección de Testimonios */
@@ -1815,6 +1796,9 @@ h2 {
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         transition: transform 0.5s ease-out;
     }
+    .menu-overlay::-webkit-scrollbar {
+        display: none;
+    }
     
     /* Fondo oscuro cuando el menú está abierto */
 .menu-overlay-bg {
@@ -1953,7 +1937,9 @@ h2 {
         -webkit-overflow-scrolling: touch; /* Mejora el scroll en móviles */
         padding-bottom: 10px;
     }
-
+    .carousel::-webkit-scrollbar {
+        display: none;
+    }
     .carousel-item {
         flex: 0 0 80%; /* Cada tarjeta ocupa el 80% del ancho */
         max-width: 320px;
