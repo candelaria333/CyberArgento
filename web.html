@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CyberArgento - Agencia Digital</title>
+    <link rel="stylesheet" href="web.css">
+    <script src="web.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+   
+
+
+
+    
+</head>
+<body>
+<!-- Menú de Navegación -->
+<header>
+  <!-- Menú para PC -->
+  <nav class="menu" id="desktopMenu">
+      <ul>
+          <li><a href="web.html">Inicio</a></li>
+          <li><a href="web.html#sobre-nosotros">Sobre Nosotros</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="web.html#servicios">Servicios</a></li>
+          <li><a href="portfolio.html">Portafolio</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+      </ul>
+  </nav>
+
+  <!-- Menú Hamburguesa para Móviles -->
+
+  <div class="menu-hamburguesa" id="mobileMenu">
+      <div class="menu-top">
+          <img src="img/logo.png" alt="Logo" class="logo">
+          <div class="menu-icon" id="menuIcon">☰</div>
+      </div>
+
+      <!-- Menú desplegable -->
+      <nav class="menu-overlay" id="menuOverlay">
+
+          <ul class="menu-links">
+              <li><a href="web.html">Inicio</a></li>
+              <li><a href="web.html#sobre-nosotros">Sobre Nosotros</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="web.html#servicios">Servicios</a></li>
+              <li><a href="portfolio.html">Portafolio</a></li>
+              <li><a href="web.html#contacto">Contacto</a></li>
+          </ul>
+      </nav>
+  </div>
+    <!-- Fondo oscuro que cubre la pantalla cuando el menú está abierto -->
+    <div class="menu-overlay-bg"></div>
+</header>
+
+
+    <!-- Sección home -->
+    <section id="home" class="hero-section">
+        <div class="video-background">
+            <video autoplay loop muted playsinline>
+              <source src="img/fondovideo.mp4" type="video/mp4">
+            </video>
+            <div class="content-overlay">
+                <h1>Bienvenido a CyberArgento</h1>
+                <p>Transforma tu negocio al mundo digital con soluciones innovadoras y personalizadas.</p>
+                <a href="https://wa.me/542657779173" class="cta-button">Solicita tu reunión ya mismo</a>
+            </div>
+        </div>
+        
+    </section>
+    
+    
+    <section id="sobre-nosotros"class="sobre-nosotros">
+      <div class="caja-negra">
+          <h2>¿Quiénes Somos?</h2>
+          <p>En CyberArgento Agency, transformamos ideas en experiencias digitales impactantes. Somos un equipo de apasionados del desarrollo web y diseño, comprometidos con brindar soluciones a medida para emprendedores y empresas que buscan destacarse en el mundo digital. Creemos en la innovación, la personalización y la calidad como pilares fundamentales para crear sitios web únicos, funcionales y estratégicos. Nuestra misión es impulsar negocios con tecnología de vanguardia, creatividad y un enfoque 100% orientado a resultados.</p>
+      </div>
+      <div class="caja caja-verde" id="cajaVerde">
+        <div class="item">
+            <i class="fa-solid fa-user-check"></i>
+            <div>
+                <h3>Atención especializada</h3>
+                <p>Ofrecemos comunicación constante y prioritaria para cada proyecto.</p>
+            </div>
+        </div>
+        <div class="item">
+            <i class="fa-solid fa-chart-line"></i>
+            <div>
+                <h3>Estrategias de posicionamiento</h3>
+                <p>Llevamos tu sitio web a la cima de los resultados de búsqueda.</p>
+            </div>
+        </div>
+        <div class="item">
+            <i class="fa-solid fa-gears"></i>
+            <div>
+                <h3>Desarrollo personalizado</h3>
+                <p>Sitios web únicos y a medida para reflejar tu visión y marca.</p>
+            </div>
+        </div>
+    </div>
+      </div>
+  </section>
+
+<!-- Carrusel de Servicios -->
+
+<section id="servicios" class="carousel-container">
+  <section class="servicios-description">
+    <h1>Servicios</h1>
+    <p>Clickea para ver la descripcion</p>
+  </section>
+    <div class="carousel">
+        <div class="carousel-item" data-title="Desarrollo Web y E-commerce" data-description="Creamos páginas web a medida, desde sitios corporativos hasta e-commerce, adaptadas a tus necesidades. Te ayudamos a estar online con un diseño moderno y funcional que te permita conectar con tus clientes y aumentar tus ventas." onclick="openModal(this)">
+            <img src="img/desarrolloweb.png" alt="Logo Desarrollo Web y E-commerce" class="service-logo">
+            <h3 class="service-title">Desarrollo Web y E-commerce</h3>
+        </div>
+        
+        <div class="carousel-item" data-title="Diseño Gráfico" data-description="¿Querés que tu marca destaque? Diseñamos logos, identidad visual y contenido para redes sociales que reflejen tu estilo único. Hacemos que tu imagen hable por vos y atraiga a más clientes." onclick="openModal(this)">
+            <img src="img/diseñografico.png" alt="Logo Diseño Gráfico" class="service-logo">
+            <h3 class="service-title">Diseño Gráfico</h3>
+        </div>
+        <div class="carousel-item" data-title="Portafolios Web" data-description="Si sos creador o profesional, te ayudamos a mostrar tu trabajo de manera impactante. Desarrollamos portafolios web interactivos que no solo lucen bien, sino que también ayudan a que tu potencial cliente vea lo mejor de vos de forma rápida y clara." onclick="openModal(this)">
+            <img src="img/portfolio.png" alt="Logo Portafolios Profesionales" class="service-logo">
+            <h3 class="service-title">Portafolios Profesionales</h3>
+        </div>
+        <div class="carousel-item" data-title="Consultoría Personalizada" data-description="Te acompañamos en el proceso de digitalizar tu negocio. A través de reuniones 1 a 1, analizamos tus necesidades y diseñamos el plan perfecto para que tu presencia online sea un éxito." onclick="openModal(this)">
+            <img src="img/consultoria.png" alt="Logo Consultoría Personalizada" class="service-logo">
+            <h3 class="service-title">Consultoría Personalizada</h3>
+        </div>
+        <div class="carousel-item" data-title="Automatización con Chatbots" data-description="¿Querés mejorar la atención al cliente? Te implementamos chatbots para que tu negocio esté disponible 24/7, respondiendo consultas de manera automática y optimizando tiempos. Es la solución para que puedas gestionar más con menos." onclick="openModal(this)">
+            <img src="img/automatizacion.png" alt="Logo Automatización de Negocios" class="service-logo">
+            <h3 class="service-title">Automatización de Negocios</h3>
+        </div>
+    </div>
+    <button class="carousel-button prev">&#10094;</button>
+    <button class="carousel-button next">&#10095;</button>
+
+    <!-- Modal con la explicación del servicio -->
+    <div id="serviceModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <h3 id="modalTitle"></h3>
+          <p id="modalDescription"></p>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!-- Precios -->
+<section class="pricing-description">
+  <h1>Precios</h1>
+  <p>Elige el plan adecuado para ti</p>
+  <p>Descubre el plan perfecto que se adapte a tus necesidades y comienza tu viaje con nosotros hoy.</p>
+</section>
+<section class="pricing-table">
+  <div class="plan">
+      <h2>Básico</h2>
+      <p class="price">€15 <span>/mes</span></p>
+      <p class="annual-price">€12 al mes si se paga anualmente</p>
+      <button>Comprar plan</button>
+      <ul>
+          <li>Perfecto para individuos que recién comienzan.</li>
+          <li>5 proyectos</li>
+          <li>Hasta 1,000 vistas</li>
+          <li>Análisis básico</li>
+          <li>Soporte por correo electrónico</li>
+      </ul>
+  </div>
+  <div class="plan">
+      <h2>Profesional</h2>
+      <p class="price">€30 <span>/mes</span></p>
+      <p class="annual-price">€24 al mes si se paga anualmente</p>
+      <button>Comprar plan</button>
+      <ul>
+          <li>Ideal para profesionales que buscan aumentar su audiencia.</li>
+          <li>25 proyectos</li>
+          <li>Hasta 10,000 vistas</li>
+          <li>Análisis avanzado</li>
+          <li>Soporte prioritario por correo electrónico</li>
+          <li>Herramientas de SEO</li>
+      </ul>
+  </div>
+  <div class="plan">
+      <h2>Empresarial</h2>
+      <p class="price">€60 <span>/mes</span></p>
+      <p class="annual-price">€48 al mes si se paga anualmente</p>
+      <button>Comprar plan</button>
+      <ul>
+          <li>Mejor para empresas que buscan expandir su presencia.</li>
+          <li>Proyectos ilimitados</li>
+          <li>Vistas ilimitadas</li>
+          <li>Análisis avanzado</li>
+          <li>Soporte 24/7</li>
+          <li>Automatización de marketing</li>
+          <li>Herramientas de colaboración en equipo</li>
+      </ul>
+  </div>
+</section>
+
+<!-- Sección de Testimonios -->
+
+
+<div class="testimonials-container">
+    <h2>TESTIMONIOS</h2>
+    <div class="testimonials-carousel">
+        <div class="testimonial-item">
+            <p class="testimonial-text">"Excelente trabajo, nos ayudaron a transformar digitalmente nuestro negocio."</p>
+            <h3 class="client-name">Juan Pérez</h3>
+            <p class="client-role">CEO, Empresa X</p>
+        </div>
+
+        <div class="testimonial-item">
+            <p class="testimonial-text">"El servicio es profesional, y el equipo entendió nuestras necesidades a la perfección."</p>
+            <h3 class="client-name">Ana Gómez</h3>
+            <p class="client-role">Fundadora, Marca Y</p>
+        </div>
+
+        <div class="testimonial-item">
+            <p class="testimonial-text">"Muy contentos con el diseño de nuestra página web, nos aumentaron las ventas."</p>
+            <h3 class="client-name">Carlos López</h3>
+            <p class="client-role">Gerente, Tienda Z</p>
+        </div>
+
+        <div class="testimonial-item">
+            <p class="testimonial-text">"Recomiendo al 100% sus servicios. ¡Son los mejores!"</p>
+            <h3 class="client-name">María Fernández</h3>
+            <p class="client-role">Directora, Estudio Creativo</p>
+        </div>
+    </div>
+    <!-- Botones de navegación -->
+    <button class="carousel-button prev">&#10094;</button>
+    <button class="carousel-button next">&#10095;</button>
+</div>
+
+
+<!-- Sección Blog -->
+<section id="blog" class="blog-section">
+    <div class="blog-content">
+      <!-- Imagen a la izquierda -->
+      <div class="blog-image">
+        <img src="img/blogprtada1.png" alt="Imagen del blog">
+      </div>
+      
+      <!-- Texto y botón a la derecha -->
+      <div class="blog-text">
+        <h2>¿Quieres saber cómo digitalizar tu negocio?</h2>
+        <p>Encuentra los mejores tips y estrategias en nuestro blog.</p>
+        <a href="blog.html" class="btn-leer-mas">Leer más</a>
+      </div>
+    </div>
+</section>
+  
+
+
+
+<section id="contacto" >
+    <div id="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387190.2799111126!2d-74.25986735805655!3d40.69767006339667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22755b010f%3A0xe9c2e38f2c358bf6!2sNew%20York%20City%2C%20NY%2C%20USA!5e0!3m2!1ses!2sar!4v1667945596589!5m2!1ses!2sar" 
+                style="border:0; width: 100%; height: 100%; position: absolute;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="form-container">
+            <h2>Contact Us</h2>
+            <form action="https://formspree.io/f/xjkgnovd" method="post">
+                <div class="form-group">
+                  <label for="name">Full Name</label>
+                  <input type="text" id="name" name="name" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                  <label for="message">Your Message</label>
+                  <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+                </div>
+                <div class="form-group checkbox-group">
+                  <input type="checkbox" id="copy" name="copy">
+                  <label for="copy">Send copy to my email</label>
+                </div>
+                <button type="submit" class="btn">SEND EMAIL</button>
+              </form>
+        </div>
+    </div>
+</section>
+    
+<!-- Botón flotante de WhatsApp -->
+<a href="https://wa.me/542657327914" target="_blank" class="whatsapp-float">
+  <img src="img/WhatsApp.svg" alt="WhatsApp">
+</a>
+
+
+<footer class="code-footer">
+        <div class="footer-content">
+          <!-- Texto de código -->
+          <div class="code-text">
+            <p>// Created with ❤ by CyberArgento</p>
+            <p>
+                if (youNeedHelp) &#123; 
+                <a href="https://wa.me/542657779173" target="_blank" class="contact-link">contactUs(CyberArgento);</a> 
+                &#125;
+            </p>
+          </div>
+          <!-- Iconos de redes sociales -->
+          <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank" class="icon facebook" title="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" class="icon instagram" title="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank" class="icon twitter" title="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" class="icon linkedin" title="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+</footer>
+      
+
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+}
+
+.intro {
+    text-align: center;
+}
+
+h1 {
+    font-size: 4rem;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    animation: move 2s infinite alternate;
+    transform-style: preserve-3d;
+    transform: rotateX(20deg) rotateY(30deg);
+}
+
+@keyframes move {
+    0% {
+        transform: rotateX(20deg) rotateY(30deg) translateY(-20px);
+    }
+    100% {
+        transform: rotateX(20deg) rotateY(30deg) translateY(20px);
+    }
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    margin-top: 30px;
+    cursor: pointer;
+    border: none;
+    background-color: #333;
+    color: white;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.logo {
+    animation: moveLogo 2s ease-in-out infinite;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo video {
+    width: 250px; /* Ajusta el tamaño del video */
+    height: auto;
+    border-radius: 10px; /* Para eliminar la línea negra si es un borde */
+}
+.intro {
+    text-align: center;
+}
+
+h1 {
+    font-size: 4rem;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    animation: move 2s infinite alternate;
+    transform-style: preserve-3d;
+    transform: rotateX(20deg) rotateY(30deg);
+}
+
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    margin-top: 30px;
+    cursor: pointer;
+    border: none;
+    background-color: #333;
+    color: white;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.logo {
+    animation: moveLogo 2s ease-in-out infinite;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo video {
+    width: 250px; /* Ajusta el tamaño del video */
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+    
+    button {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+    
+    .logo video {
+        width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    button {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+    
+    .logo video {
+        width: 150px;
+    }
+}
+

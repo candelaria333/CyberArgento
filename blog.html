@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - CyberArgento</title>
+    <link rel="stylesheet" href="blog.css"> <!-- Asegúrate de enlazar tu archivo CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Menú de Navegación -->
+    <header>
+ <!-- Menú para PC -->
+ <nav class="menu" id="desktopMenu">
+    <ul>
+        <li><a href="web.html">Inicio</a></li>
+        <li><a href="web.html#sobre-nosotros">Sobre Nosotros</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="web.html#servicios">Servicios</a></li>
+        <li><a href="portfolio.html">Portafolio</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+    </ul>
+</nav>
+
+<!-- Menú Hamburguesa para Móviles -->
+<div class="menu-hamburguesa" id="mobileMenu">
+    <div class="menu-top">
+        <img src="img/logo.png" alt="Logo" class="logo">
+        <div class="menu-icon" id="menuIcon">☰</div>
+    </div>
+
+    <!-- Menú desplegable -->
+    <nav class="menu-overlay" id="menuOverlay">
+
+        <ul class="menu-links">
+            <li><a href="web.html">Inicio</a></li>
+            <li><a href="web.html#sobre-nosotros">Sobre Nosotros</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="web.html#servicios">Servicios</a></li>
+            <li><a href="portfolio.html">Portafolio</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+</div>
+    </header>
+
+<!-- Sección de Blog -->
+<section class="blog">
+    <h2>Últimos Blogs</h2>
+    <div class="blog-container">
+        <!-- Entrada 1 -->
+        <div class="blog-item">
+            <div class="blog-image" onclick="openModal(1)">
+                <img src="img/blog1.png" alt="Imagen Entrada 1">
+                <div class="hover-message">¡Haz clic para leer más!</div>
+            </div>
+            <div class="blog-content">
+                <h3>La clave para el éxito en la era digital</h3>
+                <p>Hoy en día, el mercado está más conectado que nunca...</p>
+                <button class="read-more" onclick="openModal(1)">Leer más</button>
+            </div>
+        </div>
+
+        <!-- Entrada 2 -->
+        <div class="blog-item">
+            <div class="blog-image" onclick="openModal(2)">
+                <img src="img/blog2.png" alt="Imagen Entrada 2">
+                <div class="hover-message">¡Haz clic para leer más!</div>
+            </div>
+            <div class="blog-content">
+                <h3>La importancia de un diseño atractivo</h3>
+                <p>El diseño de tu página web es crucial para captar la atención de...</p>
+                <button class="read-more" onclick="openModal(2)">Leer más</button>
+            </div>
+        </div>
+
+        <!-- Entrada 3 -->
+        <div class="blog-item">
+            <div class="blog-image" onclick="openModal(3)">
+                <img src="img/blog3.png" alt="Imagen Entrada 3">
+                <div class="hover-message">¡Haz clic para leer más!</div>
+            </div>
+            <div class="blog-content">
+                <h3>Marketing digital para pequeñas empresas</h3>
+                <p>Descubre cómo el marketing digital puede transformar tu negocio en línea...</p>
+                <button class="read-more" onclick="openModal(3)">Leer más</button>
+            </div>
+        </div>
+
+        <!-- Entrada 4 -->
+        <div class="blog-item">
+            <div class="blog-image" onclick="openModal(4)">
+                <img src="img/blog4.png" alt="Imagen Entrada 4">
+                <div class="hover-message">¡Haz clic para leer más!</div>
+            </div>
+            <div class="blog-content">
+                <h3>Marketing digital para pequeñas empresas</h3>
+                <p>Descubre cómo el marketing digital puede transformar tu negocio en línea...</p>
+                <button class="read-more" onclick="openModal(4)">Leer más</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal -->
+<div id="serviceModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h3 id="modalTitle"></h3>
+      <p id="modalDescription"></p>
+
+    </div>
+</div>
+
+
+
+<!-- Contacto -->
+    <section id="contacto">
+        <div id="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387190.2799111126!2d-74.25986735805655!3d40.69767006339667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22755b010f%3A0xe9c2e38f2c358bf6!2sNew%20York%20City%2C%20NY%2C%20USA!5e0!3m2!1ses!2sar!4v1667945596589!5m2!1ses!2sar" 
+                    style="border:0; width: 100%; height: 100%; position: absolute;" allowfullscreen="" loading="lazy"></iframe>
+            <div class="form-container">
+                <h2>Contact Us</h2>
+                <form action="#" method="post">
+                    <div class="form-group">
+                      <label for="name">Full Name</label>
+                      <input type="text" id="name" name="name" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="email" id="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="message">Your Message</label>
+                      <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+                    </div>
+                    <div class="form-group checkbox-group">
+                      <input type="checkbox" id="copy" name="copy">
+                      <label for="copy">Send copy to my email</label>
+                    </div>
+                    <button type="submit" class="btn">SEND EMAIL</button>
+                  </form>
+            </div>
+        </div>
+        
+        <!-- Botón flotante de WhatsApp -->
+    <a href="https://wa.me/542657327914" target="_blank" class="whatsapp-float">
+     <img src="img/WhatsApp.svg" alt="WhatsApp">
+    </a>
+    
+        <!-- Footer -->
+        <footer class="code-footer">
+            <div class="footer-content">
+              <!-- Texto de código -->
+              <div class="code-text">
+                <p>// Created with ❤️ by CyberArgento</p>
+                <p>
+                    if (youNeedHelp) &#123; 
+                    <a href="https://wa.me/542657779173" target="_blank" class="contact-link">contactUs(CyberArgento);</a> 
+                    &#125;
+                </p>
+              </div>
+              <!-- Iconos de redes sociales -->
+              <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank" class="icon facebook" title="Facebook">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" class="icon instagram" title="Instagram">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.twitter.com" target="_blank" class="icon twitter" title="Twitter">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" class="icon linkedin" title="LinkedIn">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+    </footer>
+
+    <!-- Scripts (si es necesario) -->
+    <script src="blog.js"></script> <!-- Si tienes algún script JS -->
+</body>
+</html>
