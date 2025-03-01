@@ -169,6 +169,7 @@ window.onscroll = function() {
         menu.style.top = "0"; // Se mantiene en la parte superior al hacer scroll
     }
 };
+
 document.addEventListener("DOMContentLoaded", function () {
     const menuIcon = document.querySelector(".menu-icon");
     const menuOverlay = document.querySelector(".menu-overlay");

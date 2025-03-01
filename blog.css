@@ -56,7 +56,7 @@ nav a:hover {
     text-align: center;
     padding: 40px;
     background-color: #1e2a3a;
-    font-family:  'DM Sans', sans-serif;
+    font-family: 'DM Sans', sans-serif;
 }
 
 .blog h2 {
@@ -121,11 +121,13 @@ nav a:hover {
 }
 
 .blog-content p {
- margin-top: 5%;
- font-weight: normal;
+    margin-top: 5%;
+    font-weight: normal;
 }
+
 .read-more {
-    margin-top: 20px; /* Agrega un margen superior */
+    margin-top: 20px;
+    /* Agrega un margen superior */
     /*margin-bottom: 20px; /* Agrega un margen inferior para separar del párrafo */
     background: #16a085;
     color: #ffffff;
@@ -150,11 +152,14 @@ nav a:hover {
     background-color: rgba(0, 0, 0, 0.6);
     padding: 5px 10px;
     border-radius: 5px;
-    display: none; /* Ocultamos la descripción por defecto */
+    display: none;
+    /* Ocultamos la descripción por defecto */
 }
+
 /* Modal */
 .modal {
-    display: none; /* Inicialmente oculto */
+    display: none;
+    /* Inicialmente oculto */
     position: fixed;
     z-index: 1;
     left: 0%;
@@ -162,25 +167,30 @@ nav a:hover {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fondo oscuro */
     padding-top: 60px;
     align-items: center;
-    justify-content: center; /* Centra horizontalmente */
-    
+    justify-content: center;
+    /* Centra horizontalmente */
+
 }
 
 .modal-content {
     position: relative;
-    background-color: rgba(0, 0, 0, 0.9); /* Fondo oscuro */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Fondo oscuro */
     margin: 5% auto;
     padding: 30px;
     border-radius: 15px;
     width: 80%;
-    max-width: 800px; /* Aumentamos el tamaño máximo */
+    max-width: 800px;
+    /* Aumentamos el tamaño máximo */
     color: #fff;
     font-family: 'DM Sans', sans-serif;
     z-index: 10;
-    text-align: center; /* Centramos el texto */
+    text-align: center;
+    /* Centramos el texto */
 }
 
 
@@ -190,14 +200,16 @@ nav a:hover {
 /* Botón de cerrar */
 .close {
     position: absolute;
-    top: 10px; /* Lo acerca al borde superior */
-    right: 15px; /* Lo mueve a la derecha */
+    top: 10px;
+    /* Lo acerca al borde superior */
+    right: 15px;
+    /* Lo mueve a la derecha */
     font-size: 24px;
     color: #ffffff;
     cursor: pointer;
     background: none;
     border: none;
-    
+
 }
 
 .close:hover,
@@ -224,8 +236,10 @@ nav a:hover {
     /* Ajuste del contenedor en formato columna */
     .blog-container {
         display: flex;
-        flex-direction: column; /* Acomoda los elementos en columna */
-        align-items: center; /* Centra los elementos */
+        flex-direction: column;
+        /* Acomoda los elementos en columna */
+        align-items: center;
+        /* Centra los elementos */
         gap: 20px;
         padding: 10px;
     }
@@ -329,19 +343,22 @@ nav a:hover {
 /* Footer */
 /* Estilos básicos del footer */
 .code-footer {
-    background-color: #1e1e1e; /* Fondo oscuro */
-    color: #d4d4d4; /* Texto claro */
-    font-family: 'Courier New', Courier, monospace; /* Fuente monoespaciada */
+    background-color: #1e1e1e;
+    /* Fondo oscuro */
+    color: #d4d4d4;
+    /* Texto claro */
+    font-family: 'Courier New', Courier, monospace;
+    /* Fuente monoespaciada */
     padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     overflow: hidden;
-  }
-  
-  /* Animación de destellos en el fondo */
-  .code-footer::before {
+}
+
+/* Animación de destellos en el fondo */
+.code-footer::before {
     content: '';
     position: absolute;
     top: -50%;
@@ -351,34 +368,35 @@ nav a:hover {
     background: radial-gradient(circle, rgba(0, 255, 255, 0.2), transparent);
     animation: glow-bg 6s linear infinite;
     z-index: 0;
-  }
-  
-  /* Efecto de código y redes sociales */
-  .footer-content {
+}
+
+/* Efecto de código y redes sociales */
+.footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     max-width: 1200px;
-    z-index: 1; /* Para que quede encima del fondo animado */
-  }
-  
-  .code-text {
+    z-index: 1;
+    /* Para que quede encima del fondo animado */
+}
+
+.code-text {
     flex: 1;
     white-space: pre-wrap;
     animation: typing 4s steps(40, end) infinite alternate;
-  }
-  
-  /* Iconos de redes sociales */
-  .social-icons {
+}
+
+/* Iconos de redes sociales */
+.social-icons {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     gap: 15px;
     flex: 1;
-  }
-  
-  .icon {
+}
+
+.icon {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -392,83 +410,88 @@ nav a:hover {
     text-decoration: none;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
     animation: icon-pulse 3s infinite;
-  }
-  
-  .icon:hover {
+}
+
+.icon:hover {
     background-color: #0078d7;
     box-shadow: 0 0 20px rgba(0, 120, 215, 0.8);
     transform: translateY(-5px) scale(1.1);
-  }
-  
-  .icon.facebook:hover {
+}
+
+.icon.facebook:hover {
     background-color: #1877f2;
-  }
-  
-  .icon.instagram:hover {
+}
+
+.icon.instagram:hover {
     background-color: #e1306c;
-  }
-  
-  .icon.twitter:hover {
+}
+
+.icon.twitter:hover {
     background-color: #1da1f2;
-  }
-  
-  .icon.linkedin:hover {
+}
+
+.icon.linkedin:hover {
     background-color: #0a66c2;
-  }
-  
-  /* Responsivo */
-  @media (max-width: 768px) {
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
     .footer-content {
-      flex-direction: column;
-      text-align: center;
+        flex-direction: column;
+        text-align: center;
     }
-  
+
     .code-text,
     .social-icons {
-      flex: unset;
-      margin-bottom: 15px;
+        flex: unset;
+        margin-bottom: 15px;
     }
-  }
-  
-  /* Animaciones */
-  
-  /* Fondo brillante que se mueve */
-  @keyframes glow-bg {
+}
+
+/* Animaciones */
+
+/* Fondo brillante que se mueve */
+@keyframes glow-bg {
     0% {
-      transform: translate(-50%, -50%) rotate(0deg);
+        transform: translate(-50%, -50%) rotate(0deg);
     }
+
     100% {
-      transform: translate(-50%, -50%) rotate(360deg);
+        transform: translate(-50%, -50%) rotate(360deg);
     }
-  }
-  
-  /* Animación de máquina de escribir */
-  @keyframes typing {
+}
+
+/* Animación de máquina de escribir */
+@keyframes typing {
     from {
-      opacity: 0;
-      transform: scale(0.95);
+        opacity: 0;
+        transform: scale(0.95);
     }
+
     to {
-      opacity: 1;
-      transform: scale(1);
+        opacity: 1;
+        transform: scale(1);
     }
-  }
-  
-  /* Pulso suave en los iconos */
-  @keyframes icon-pulse {
-    0%, 100% {
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Pulso suave en los iconos */
+@keyframes icon-pulse {
+
+    0%,
+    100% {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
     }
+
     50% {
-      box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
     }
-  }
-  
-  /* Contenedor del mapa */
+}
+
+/* Contenedor del mapa */
 #map-container {
     width: 100%;
     height: 100vh;
-    background-image: url('https://maps.googleapis.com/maps/api/staticmap?center=Buenos+Aires,Argentina&zoom=12&size=640x640&key=TU_CLAVE_API'); 
+    background-image: url('https://maps.googleapis.com/maps/api/staticmap?center=Buenos+Aires,Argentina&zoom=12&size=640x640&key=TU_CLAVE_API');
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -479,14 +502,18 @@ nav a:hover {
 
 /* Contenedor del formulario */
 .form-container {
-    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con algo de transparencia */
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Fondo blanco con algo de transparencia */
     padding: 20px;
     width: 90%;
-    max-width: 400px; /* Aumento el tamaño máximo del formulario */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra más suave */
+    max-width: 400px;
+    /* Aumento el tamaño máximo del formulario */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra más suave */
     border-radius: 8px;
     text-align: center;
-    z-index: 2; /* Asegura que el formulario esté sobre el mapa */
+    z-index: 2;
+    /* Asegura que el formulario esté sobre el mapa */
 }
 
 /* Estilos para el título del formulario */
@@ -619,7 +646,8 @@ textarea {
 
 /* General */
 
-h2, h3 {
+h2,
+h3 {
     color: #fff;
 }
 
@@ -631,13 +659,16 @@ a {
 /* Header */
 
 header .logo {
-    display: flex; /* Cambié el display a flex */
-    align-items: center; /* Alinea verticalmente el logo con el título */
+    display: flex;
+    /* Cambié el display a flex */
+    align-items: center;
+    /* Alinea verticalmente el logo con el título */
 }
 
 header .logo h1 {
     font-size: 1.5rem;
-    margin-right: 10px; /* Añadí margen para separarlo del logo */
+    margin-right: 10px;
+    /* Añadí margen para separarlo del logo */
     color: #ffffff;
 }
 
@@ -666,15 +697,24 @@ nav ul li {
 
 /* === Menú de PC === */
 .menu {
-    position: fixed; /* Hacer que el menú quede fijo */
-    top: 5%; /* Alinearlo a la parte superior de la página */
-    left: 15%; /* Alinearlo a la izquierda */
-    width: 70%; /* Hacer que ocupe todo el ancho de la pantalla */
-    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro con transparencia */
-    border-radius: 20%; /* Eliminar borde redondeado */
-    padding: 10px 0; /* Un poco de espacio arriba y abajo */
-    z-index: 1000; /* Asegurarse de que esté por encima de otros elementos */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agregar sombra */
+    position: fixed;
+    /* Hacer que el menú quede fijo */
+    top: 5%;
+    /* Alinearlo a la parte superior de la página */
+    left: 15%;
+    /* Alinearlo a la izquierda */
+    width: 70%;
+    /* Hacer que ocupe todo el ancho de la pantalla */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Fondo negro con transparencia */
+    border-radius: 20%;
+    /* Eliminar borde redondeado */
+    padding: 10px 0;
+    /* Un poco de espacio arriba y abajo */
+    z-index: 1000;
+    /* Asegurarse de que esté por encima de otros elementos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Agregar sombra */
 }
 
 .menu ul {
@@ -700,27 +740,36 @@ nav ul li {
 }
 
 .menu ul li a:hover {
-    background-color: #00d1b21b; /* Color de fondo al pasar el mouse */
-    color: #fff; /* Color del texto */
-    border-radius: 50px; /* Mantener bordes redondeados */
+    background-color: #00d1b21b;
+    /* Color de fondo al pasar el mouse */
+    color: #fff;
+    /* Color del texto */
+    border-radius: 50px;
+    /* Mantener bordes redondeados */
 }
+
 /* Eliminar la línea blanca en hover, focus y active */
 .menu ul li a:focus,
 .menu ul li a:active {
     color: #fff;
-    border: none; /* Asegura que no tenga borde */
-    outline: none; /* Elimina la línea blanca */
+    border: none;
+    /* Asegura que no tenga borde */
+    outline: none;
+    /* Elimina la línea blanca */
 }
 
 
 /* === Menu Hamburguesa === */
 .menu-hamburguesa {
-    display: none; /* Oculto en PC */
+    display: none;
+    /* Oculto en PC */
 }
+
 /* === Responsive SOLO para móviles === */
 @media (max-width: 768px) {
     .menu {
-        display: none; /* Ocultar menú de PC en móvil */
+        display: none;
+        /* Ocultar menú de PC en móvil */
     }
 
     .menu-hamburguesa {
@@ -759,7 +808,7 @@ nav ul li {
         cursor: pointer;
         user-select: none;
         color: #333;
-        font-weight:'DM Sans', sans-serif;
+        font-weight: 'DM Sans', sans-serif;
     }
 
     /* === Menú Overlay === */
@@ -767,7 +816,8 @@ nav ul li {
         position: fixed;
         top: 575%;
         left: 50%;
-        width: 98%; /* Un poco más de margen para móviles */
+        width: 98%;
+        /* Un poco más de margen para móviles */
         max-width: 371px;
         max-height: 50vh;
         background: rgba(255, 255, 255, 0.95);
@@ -779,34 +829,38 @@ nav ul li {
         align-items: center;
         padding: 20px;
         border-radius: 20px;
-        transform: translate(-50%, -50%) scaleY(0); /* CENTRADO */
+        transform: translate(-50%, -50%) scaleY(0);
+        /* CENTRADO */
         transform-origin: top;
         overflow-y: auto;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         transition: transform 0.5s ease-out;
     }
-    
+
     /* Fondo oscuro cuando el menú está abierto */
-.menu-overlay-bg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(5px);
-    z-index: 9997; /* Justo debajo del menú */
-    display: none;
-}
-/* Mostramos el fondo cuando el menú está activo */
-.menu-overlay-bg.active {
-    display: block;
-}
+    .menu-overlay-bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(5px);
+        z-index: 9997;
+        /* Justo debajo del menú */
+        display: none;
+    }
+
+    /* Mostramos el fondo cuando el menú está activo */
+    .menu-overlay-bg.active {
+        display: block;
+    }
+
     /* Activamos el menú */
     .menu-overlay.active {
         transform: translate(-50%, -50%) scaleY(1);
     }
-    
+
 
     .menu-overlay .menu-top {
         position: absolute;
@@ -820,60 +874,65 @@ nav ul li {
 
     .menu-links {
         display: flex;
-        flex-direction: row; /* Alinea los elementos en fila */
-        justify-content: center; /* Centra los elementos en la fila */
+        flex-direction: row;
+        /* Alinea los elementos en fila */
+        justify-content: center;
+        /* Centra los elementos en la fila */
         align-items: center;
-        flex-wrap: wrap; /* Permite que se ajusten si no caben */
-        gap: 15px; /* Espacio entre elementos */
+        flex-wrap: wrap;
+        /* Permite que se ajusten si no caben */
+        gap: 15px;
+        /* Espacio entre elementos */
         padding: 0;
         margin: 60px 0 0 0;
         text-align: center;
         width: 100%;
         padding-bottom: 60px;
     }
-    
+
     .menu-links li {
         display: flex;
         justify-content: center;
         align-items: center;
         flex: 1;
-        min-width: 100px; /* Ajusta el ancho mínimo según necesites */
+        min-width: 100px;
+        /* Ajusta el ancho mínimo según necesites */
     }
-    
-/* Animación para los enlaces del menú */
-.menu-links a {
-    position: relative;
-    font-size: 18px;
-    color: #333;
-    text-decoration: none;
-    font-weight:normal;
-    padding: 10px;
-    transition: color 0.3s ease;
-    overflow: hidden;
-}
 
-.menu-links a::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 100%;
-    height: 2px;
-    background-color: #00a693;
-    transform: translateX(-50%);
-    transform-origin: center;
-    transition: transform 0.3s ease;
-    opacity: 0;
-}
+    /* Animación para los enlaces del menú */
+    .menu-links a {
+        position: relative;
+        font-size: 18px;
+        color: #333;
+        text-decoration: none;
+        font-weight: normal;
+        padding: 10px;
+        transition: color 0.3s ease;
+        overflow: hidden;
+    }
 
-.menu-links a:hover {
-    color: #00a693;
-}
+    .menu-links a::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 100%;
+        height: 2px;
+        background-color: #00a693;
+        transform: translateX(-50%);
+        transform-origin: center;
+        transition: transform 0.3s ease;
+        opacity: 0;
+    }
 
-.menu-links a:hover::before {
-    transform: translateX(-50%) scaleX(1);
-    opacity: 1;
-}
+    .menu-links a:hover {
+        color: #00a693;
+    }
+
+    .menu-links a:hover::before {
+        transform: translateX(-50%) scaleX(1);
+        opacity: 1;
+    }
 
 }
 
@@ -889,7 +948,8 @@ nav ul li {
         height: 28px;
     }
 
-    .menu-icon, .menu-close {
+    .menu-icon,
+    .menu-close {
         font-size: 20px;
     }
 
@@ -905,9 +965,9 @@ nav ul li {
     width: 100%;
     height: 100vh;
     overflow: hidden;
-  }
-  
-  .video-background video {
+}
+
+.video-background video {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -916,9 +976,9 @@ nav ul li {
     object-fit: cover;
     transform: translate(-50%, -50%);
     z-index: 1;
-  }
-  
-  .content-overlay {
+}
+
+.content-overlay {
     position: relative;
     z-index: 2;
     text-align: center;
@@ -926,28 +986,30 @@ nav ul li {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
-  
-  .content-overlay h1 {
+}
+
+.content-overlay h1 {
     font-family: 'DM Sans', sans-serif;
     font-size: 3rem;
     margin-bottom: 10px;
-    animation: fadeIn 2s ease-out forwards; 
-    opacity: 0; /* Empieza invisible */
-  }
-  
-  .content-overlay p {
+    animation: fadeIn 2s ease-out forwards;
+    opacity: 0;
+    /* Empieza invisible */
+}
+
+.content-overlay p {
     font-family: 'DM Sans', sans-serif;
     font-size: 1.5rem;
 
-  }
-  
+}
+
 
 .cta-button {
     display: inline-block;
     margin-top: 20px;
     padding: 15px 30px;
-    background-color: #16a085; /* Color del botón */
+    background-color: #16a085;
+    /* Color del botón */
     color: #ffffff;
     font-size: 1rem;
     font-weight: bold;
@@ -958,25 +1020,34 @@ nav ul li {
 }
 
 .cta-button:hover {
-    background-color: #1abc9c; /* Color al pasar el mouse */
-    transform: scale(1.05); /* Ligero aumento al pasar el mouse */
+    background-color: #1abc9c;
+    /* Color al pasar el mouse */
+    transform: scale(1.05);
+    /* Ligero aumento al pasar el mouse */
 }
 
 .cta-button:active {
-    background-color: #16a085; /* Color al hacer clic */
-    transform: scale(0.98); /* Pequeña reducción al hacer clic */
+    background-color: #16a085;
+    /* Color al hacer clic */
+    transform: scale(0.98);
+    /* Pequeña reducción al hacer clic */
 }
 
 
 /* Animaciones */
 @keyframes fadeIn {
     0% {
-        opacity: 0; /* Empieza invisible */
-        transform: translateY(-20px); /* Aparece desde arriba */
+        opacity: 0;
+        /* Empieza invisible */
+        transform: translateY(-20px);
+        /* Aparece desde arriba */
     }
+
     100% {
-        opacity: 1; /* Termina completamente visible */
-        transform: translateY(0); /* Se queda en su posición original */
+        opacity: 1;
+        /* Termina completamente visible */
+        transform: translateY(0);
+        /* Se queda en su posición original */
     }
 }
 
@@ -984,11 +1055,14 @@ nav ul li {
 @keyframes fadeIn {
     0% {
         opacity: 0;
-        transform: translateY(-20px); /* Aparece desde arriba */
+        transform: translateY(-20px);
+        /* Aparece desde arriba */
     }
+
     100% {
         opacity: 1;
-        transform: translateY(0); /* Se queda en su posición original */
+        transform: translateY(0);
+        /* Se queda en su posición original */
     }
 }
 
@@ -998,6 +1072,7 @@ nav ul li {
     .hero-content h1 {
         font-size: 3rem;
     }
+
     .hero-content p {
         font-size: 1.2rem;
     }
@@ -1007,6 +1082,7 @@ nav ul li {
     .hero-content h1 {
         font-size: 2.5rem;
     }
+
     .hero-content p {
         font-size: 1rem;
     }
@@ -1021,9 +1097,12 @@ h2 {
 /* Botón flotante de WhatsApp */
 .whatsapp-float {
     position: fixed;
-    bottom: 20px;  /* Pegado abajo */
-    right: 20px;    /* Pegado a la izquierda */
-    width: 58px;   /* Ajustar tamaño del botón */
+    bottom: 20px;
+    /* Pegado abajo */
+    right: 20px;
+    /* Pegado a la izquierda */
+    width: 58px;
+    /* Ajustar tamaño del botón */
     height: 58px;
     background-color: #25D366;
     border-radius: 50%;
@@ -1031,13 +1110,14 @@ h2 {
     align-items: center;
     justify-content: center;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    z-index: 1000; /* Que esté sobre otros elementos */
+    z-index: 1000;
+    /* Que esté sobre otros elementos */
     transition: transform 0.3s ease;
 }
 
 /* Imagen dentro del botón */
 .whatsapp-float img {
-    width: 35px; 
+    width: 35px;
     height: 35px;
 }
 

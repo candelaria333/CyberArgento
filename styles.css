@@ -59,6 +59,7 @@ button:hover {
     height: auto;
     border-radius: 10px; /* Para eliminar la línea negra si es un borde */
 }
+
 .intro {
     text-align: center;
 }
