@@ -498,6 +498,7 @@ h2 {
     font-weight: 'DM Sans', sans-serif;
     color: #ffffff;
     margin-bottom: 40px;
+    padding-top: 2%;
 }
 
 /* Carrusel de testimonios */
@@ -506,7 +507,7 @@ h2 {
     justify-content: center;
     gap: 20px;
     transition: transform 0.5s ease-in-out;
-    padding-top: 4%;
+    padding-top: 2.5%;
     padding-bottom: 5%;
 }
 
