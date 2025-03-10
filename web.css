@@ -5,6 +5,17 @@
     box-sizing: border-box;
 }
 
+.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 body {
     font-family: 'DM Sans', sans-serif;
     background-color: #111;
@@ -238,7 +249,7 @@ nav ul li {
     }
 }
 
-
+/*SERVICIOS*/
 
 h2 {
     text-align: center;
@@ -495,6 +506,8 @@ h2 {
     justify-content: center;
     gap: 20px;
     transition: transform 0.5s ease-in-out;
+    padding-top: 4%;
+    padding-bottom: 5%;
 }
 
 /* Cada item del carrusel de testimonios */
@@ -685,6 +698,7 @@ h2 {
     padding: 20px;
     background-color: #1e2a3a;
     font-family: 'DM Sans', sans-serif;
+    padding-bottom: 5%;
 }
 
 .pricing-description {
@@ -692,6 +706,7 @@ h2 {
     padding: 20px;
     background-color: #1e2a3a;
     font-weight: normal;
+    padding-top: 4%;
 
 }
 
@@ -760,6 +775,7 @@ ul {
 ul li {
     margin: 10px 0;
     font-size: 16px;
+    text-align: left;
 }
 
 /* === Responsive - Precios para Celulares === */
@@ -883,6 +899,7 @@ ul li {
     text-align: center;
     z-index: 2;
     /* Asegura que el formulario esté sobre el mapa */
+    font-weight: normal;
 }
 
 /* Estilos para el título del formulario */
@@ -897,6 +914,7 @@ h2 {
 .form-group {
     margin-bottom: 15px;
     text-align: left;
+    font-weight: normal;
 }
 
 /* Estilo para las etiquetas de los campos */
@@ -905,6 +923,7 @@ label {
     margin-bottom: 5px;
     font-size: 14px;
     color: #555;
+    font-weight: normal;
 }
 
 /* Estilo para los campos de texto y correo electrónico */
@@ -917,11 +936,13 @@ textarea {
     border-radius: 4px;
     font-size: 14px;
     box-sizing: border-box;
+    font-weight: normal;
 }
 
 /* Ajustes para el área de texto */
 textarea {
     resize: none;
+    font-weight: normal;
 }
 
 /* Estilo para el grupo de checkbox */
@@ -929,17 +950,20 @@ textarea {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    font-weight: normal;
 }
 
 /* Estilo para los checkboxes */
 .checkbox-group input {
     margin-right: 10px;
+    font-weight: normal;
 }
 
 /* Estilo para la etiqueta del checkbox */
 .checkbox-group label {
     font-size: 14px;
     color: #555;
+    font-weight: normal;
 }
 
 /* Estilo para el botón de envío */

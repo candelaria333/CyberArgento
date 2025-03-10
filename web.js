@@ -203,6 +203,24 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll("#home, #sobre-nosotros, #servicios, #testimonios, #blog"); // Selecciona todas las secciones automáticamente
+
+    sections.forEach(section => section.classList.add("hidden")); // Agrega la clase "hidden" a todas las secciones al cargar
+
+    function showOnScroll() {
+        sections.forEach(section => {
+            const rect = section.getBoundingClientRect();
+            if (rect.top < window.innerHeight * 0.9) {
+                section.classList.add("show");
+            }
+        });
+    }
+
+    window.addEventListener("scroll", showOnScroll);
+    showOnScroll(); // Ejecutar al cargar para mostrar elementos visibles desde el inicio
+});
+
 
 
 
