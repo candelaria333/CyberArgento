@@ -55,7 +55,7 @@ button:hover {
 }
 
 .logo video {
-    width: 250px; /* Ajusta el tamaño del video */
+    width: 300px; /* Ajusta el tamaño del video */
     height: auto;
     border-radius: 10px; /* Para eliminar la línea negra si es un borde */
 }
@@ -108,12 +108,20 @@ button:hover {
         font-size: 1rem;
         padding: 8px 16px;
     }
+    .logo {
+        animation: moveLogo 2s ease-in-out infinite;
+        margin: 20px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     
     .logo video {
-        width: 100vw;  /* Que ocupe todo el ancho del viewport */
-        height: 100vh; /* Que ocupe toda la pantalla */
-        object-fit: cover; /* Asegura que el video cubra sin distorsionarse */
+        width: 50px; /* Ajusta el tamaño del video */
+        height: auto;
+        border-radius: 10px; /* Para eliminar la línea negra si es un borde */
     }
+
 }
 
 @media (max-width: 480px) {
@@ -125,11 +133,19 @@ button:hover {
         font-size: 0.9rem;
         padding: 6px 12px;
     }
+    .logo {
+        animation: moveLogo 2s ease-in-out infinite;
+        margin: 20px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     
     .logo video {
-        width: 100vw;  /* Que ocupe todo el ancho del viewport */
-        height: 100vh; /* Que ocupe toda la pantalla */
-        object-fit: cover; /* Asegura que el video cubra sin distorsionarse */
+        width: 50px; /* Ajusta el tamaño del video */
+        height: auto;
+        border-radius: 10px; /* Para eliminar la línea negra si es un borde */
     }
+
 }
 
