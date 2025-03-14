@@ -117,7 +117,7 @@ button:hover {
     }
     
     .logo video {
-        width: 50px; /* Ajusta el tamaño del video */
+        width: 160px; /* Ajusta el tamaño del video */
         height: auto;
         border-radius: 10px; /* Para eliminar la línea negra si es un borde */
     }
@@ -142,7 +142,7 @@ button:hover {
     }
     
     .logo video {
-        width: 50px; /* Ajusta el tamaño del video */
+        width: 160px; /* Ajusta el tamaño del video */
         height: auto;
         border-radius: 10px; /* Para eliminar la línea negra si es un borde */
     }
