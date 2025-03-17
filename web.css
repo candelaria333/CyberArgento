@@ -2302,8 +2302,11 @@ h2 {
 }
 
 @media (max-width: 480px) {
+ 
     .testimonial-item {
-        width: 260px;
+        flex: 0 0 85%;
+        max-width: 300px;
+        height: 220px;
     }
 
     .testimonial-text {
@@ -2318,5 +2321,25 @@ h2 {
         font-size: 13px;
     }
 }
+
+@media (max-width: 360px) { 
+    .testimonials-carousel {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        scroll-snap-type: x mandatory;
+        width: 100%;
+    }
+
+    .testimonial-item {
+        width: 160px; /* Reducir el ancho de cada testimonio para que quepan todos */
+        flex-shrink: 0;
+        padding: 10px;
+    }
+}
+
 
 /* BLOG - Diseño Responsive */
