@@ -12,12 +12,12 @@ document.addEventListener("DOMContentLoaded", () => {
             description: "El diseño de tu página web no solo impacta la estética, sino también la experiencia del usuario. Un diseño atractivo y funcional puede aumentar el tiempo de permanencia y mejorar la conversión de clientes."
         },
         3: {
-            title: "Marketing digital para pequeñas empresas",
-            description: "Las pequeñas empresas pueden aprovechar el marketing digital para competir con las grandes marcas. Desde SEO hasta redes sociales, te mostramos las estrategias clave para impulsar tu negocio online."
+            title: "La Importancia de Tener un Portafolio Web Hoy en Día",
+            description: "Hoy en día, tener un portafolio web no es solo una opción, sino una necesidad para destacar en un mundo digital cada vez más competitivo. Ya sea que seas un profesional independiente, un creador de contenido o una pequeña empresa, tu portafolio online es la mejor manera de mostrar tu trabajo, habilidades y lo que te diferencia de la competencia. En este artículo, exploraremos por qué tener un portafolio web es crucial en el mundo moderno, cómo puede ayudarte a atraer clientes y cómo puedes construir uno que realmente te represente de la mejor manera posible."
         },
         4: {
-            title: "Cómo mejorar tu presencia en redes sociales",
-            description: "Las redes sociales son esenciales para cualquier negocio en la era digital. Aprende las mejores prácticas para generar engagement, atraer clientes y mejorar tu estrategia de contenido."
+            title: "Marketing Digital para Pequeñas Empresas",
+            description: "Hoy en día, el marketing digital es una de las herramientas más poderosas para las pequeñas empresas que buscan prosperar en un mercado competitivo. Ya no es necesario contar con un gran presupuesto para implementar estrategias efectivas; el marketing digital ofrece soluciones accesibles que pueden generar grandes resultados. En este artículo, exploraremos cómo el marketing digital puede transformar tu negocio en línea y por qué es fundamental que las pequeñas empresas adopten estas estrategias."
         }
     };
 
